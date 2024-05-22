@@ -14,6 +14,7 @@
 
     <link rel="stylesheet" href="contact.css" />
     <script type="text/javascript" src="Class.js"></script>
+    <script src="contact.js" defer></script>
 
     <title>Contact</title>
   </head>
@@ -33,54 +34,45 @@
     </header>
     <main>
 
-      <h3 style="color:blanchedalmond; font-size:50px;font-style: italic;">Contact Us</h3>
-
-      <br>  
-
-  
-    </main>
-    <section class="contact-info">
-      <div>
-        <i class="fa-solid fa-location-dot"></i>
-        <p>920 Zone 16 Ga-Rankuwa 0208 </p>
+      <div class="container">
+        <h1>Contact Us</h1>
+        <br>
+        <p>Please feel free to contact us, and I will get back to you as soon as possible</p>
+        
+        <form onsubmit="handleFormSubmit(event)"
+  >
+    <label>
+      Your email:
+      <input id="email" type="email" name="email" autocomplete="off">
+      <span class="hidden non email html-element" id="email-span">Email is Invalid</span>
+    </label>
+    <label>
+      Your message:
+      <textarea id="message" name="message"></textarea>
+      <span class="hidden non message html-element" id="message-span">Message is Invalid</span>
+    </label>
+    
+    <button type="submit">Send</button>
+  </form>
       </div>
-      <div>
-        <i class="fa-solid fa-envelope"></i>
-        <p>matlalaj67@gmail.com</p>
-      </div>
-      <div>
-        <i class="fa-solid fa-phone"></i>
-        <p>081 4666 535</p>
-      </div>
-    </section>
-
-    <h2 style="text-align: center; padding: 25px;background-color: black;color: white;">Let's Connect</h2>
-
-    <section class="get-in-touch">
-      <img src="./images/" alt="" />
-      
-      <form action="https://formsubmit.co/matlalaj67@gmail.com" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-
-        <input type="submit" value="Submit" />
-      </form>
-    </section>
+      <br>
+      <br>
     <footer>
-      <a href="https://www.facebook.com/jaros.matlala" class="fa fa-facebook"></a>
-      <a href="https://www.linkedin.com/in/jaros-matlala-410717206/
+      <div class="footer-content">
+       
       
-      " class="fa fa-linkedin"></a>
-      <p>
-        &copy;  Designed by Jaros Matlala - 081 4666 535
-
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.651586441131!2d28.26519672525393!3d-25.749033127359862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95612f27644969%3A0xf3a493d04b5170a1!2sThe%20Innovation%20Hub!5e0!3m2!1sen!2sza!4v1714041995443!5m2!1sen!2sza" width="400" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      <p>Copyright © 2024&nbsp;Designed by Jaros Matlala - 081 4666 535<br></p>
     </footer>
+    </main>
+
+      
+      
+   
+   
     <script src="script.js"></script>
   </body>
 </html>
